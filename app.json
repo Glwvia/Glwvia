@@ -12,9 +12,17 @@
   },
   "plugins": [
     [
+      "expo-build-properties",
+      {
+        "android": {
+          "kotlinVersion": "1.9.22"
+        }
+      }
+    ],
+    [
       "react-native-google-mobile-ads",
       {
-        "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+        "androidAppId": "ca-app-pub-9295233124796910~4978668895",
         "iosAppId": "ca-app-pub-3940256099942544~1458009017"
       }
     ]
