@@ -33,7 +33,10 @@
     },
     "description": "Where Connections Shine - Discover Abuja dating with referral earnings",
     "extra": {
-      "paystackLink": "https://paystack.shop/pay/dr-f3oyt23"
+      "paystackLink": "https://paystack.shop/pay/dr-f3oyt23",
+      "eas": {
+        "projectId": "ef0f188f-872c-462c-aa8f-50f717887ddd"
+      }
     }
   }
 }
