@@ -1,9 +1,27 @@
-"plugins": [
-  [
-    "react-native-google-mobile-ads",
-    {
-      "androidAppId": "ca-app-pub-3940256099942544~3347511713",
-      "iosAppId": "ca-app-pub-3940256099942544~1458009017"
+{
+  "name": "Glwvia",
+  "slug": "glwvia",
+  "owner": "glevia",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "android": {
+    "package": "com.glwvia.app"
+  },
+  "ios": {
+    "bundleIdentifier": "com.glwvia.app"
+  },
+  "plugins": [
+    [
+      "react-native-google-mobile-ads",
+      {
+        "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+        "iosAppId": "ca-app-pub-3940256099942544~1458009017"
+      }
+    ]
+  ],
+  "extra": {
+    "eas": {
+      "projectId": "ef0f188f-872c-462c-aa8f-50f717887ddd"
     }
-  ]
-]
+  }
+}
