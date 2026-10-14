@@ -14,6 +14,9 @@
           "kotlinVersion": "1.9.22",
           "compileSdkVersion": 34,
           "targetSdkVersion": 34
+        },
+        "ios": {
+          "deploymentTarget": "13.4"
         }
       }
     ],
