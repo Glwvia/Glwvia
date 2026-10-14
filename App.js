@@ -1,9 +1,16 @@
 import { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, StyleSheet, Linking } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+
+const PAYSTACK_LINK = 'https://paystack.shop/pay/dr-f3oyt23';
 
 export default function App() {
   const [screen, setScreen] = useState('discover');
+
+  const openPaystack = () => {
+    Linking.openURL(PAYSTACK_LINK);
+  };
+
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
@@ -17,11 +24,23 @@ export default function App() {
           <View style={styles.card}><Text style={styles.cardTitle}>Sarah, 24 — 0.5km away</Text><Text style={styles.cardSub}>Active now • Loves travel</Text></View>
           <View style={styles.card}><Text style={styles.cardTitle}>David, 27 — 1.2km away</Text><Text style={styles.cardSub}>Verified • Entrepreneur</Text></View>
           <View style={styles.cardLock}><Text style={styles.cardTitle}>Premium 🔒</Text><Text style={styles.cardSub}>Pay ₦3,000/mo to see who liked you & earn referrals</Text></View>
-          <TouchableOpacity style={styles.payBtn}><Text style={styles.payText}>Unlock Premium — Start Earning</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.payBtn} onPress={openPaystack}>
+            <Text style={styles.payText}>Unlock Premium — Pay ₦3,000</Text>
+          </TouchableOpacity>
+          <Text style={styles.smallNote}>Secure payment by Paystack → Money goes to your Opay/PalmPay</Text>
         </ScrollView>
       )}
       {screen==='chat' && (<View style={styles.content}><Text style={styles.h1}>💬 Chats</Text><Text style={styles.cardSub}>Matches will appear here.</Text></View>)}
-      {screen==='profile' && (<View style={styles.content}><Text style={styles.h1}>👤 Wallet</Text><Text style={styles.bigMoney}>₦0.00</Text><Text style={styles.cardSub}>Share link and earn 40% per sub.</Text></View>)}
+      {screen==='profile' && (
+        <View style={styles.content}>
+          <Text style={styles.h1}>👤 Wallet</Text>
+          <Text style={styles.bigMoney}>₦0.00</Text>
+          <Text style={styles.cardSub}>Share link and earn 40% per sub. Each referral = ₦1,200 to you.</Text>
+          <TouchableOpacity style={styles.payBtn} onPress={openPaystack}>
+            <Text style={styles.payText}>Test My Paystack Page</Text>
+          </TouchableOpacity>
+        </View>
+      )}
       <View style={styles.nav}>
         <TouchableOpacity onPress={()=>setScreen('discover')}><Text style={[styles.navItem, screen==='discover'&&styles.active]}>🔥 Discover</Text></TouchableOpacity>
         <TouchableOpacity onPress={()=>setScreen('chat')}><Text style={[styles.navItem, screen==='chat'&&styles.active]}>💬 Chat</Text></TouchableOpacity>
@@ -43,6 +62,7 @@ const styles=StyleSheet.create({
   cardSub:{color:'#aaa'},
   payBtn:{backgroundColor:'#ff2d6b',padding:18,borderRadius:100,alignItems:'center',marginTop:20},
   payText:{color:'#fff',fontWeight:'bold'},
+  smallNote:{color:'#666',fontSize:12,textAlign:'center',marginTop:10},
   nav:{flexDirection:'row',justifyContent:'space-around',padding:16,backgroundColor:'#1a1a1f',borderTopWidth:1,borderColor:'#222'},
   navItem:{color:'#888'},
   active:{color:'#ff2d6b',fontWeight:'bold'},
