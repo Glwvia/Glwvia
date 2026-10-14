@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, Linking } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import mobileAds, { BannerAd, BannerAdSize, InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
-
+import mobileAds, { BannerAd, BannerAdSize, InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
 // Use Test IDs first, later you change to your real ID to make money
 const BANNER_ID = TestIds.BANNER;
 const INTERSTITIAL_ID = TestIds.INTERSTITIAL;
