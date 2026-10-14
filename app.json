@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Glwvia",
+    "slug": "Glwvia",
+    "owner": "glevia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "backgroundColor": "#0f0f12",
+      "resizeMode": "contain"
+    },
+    "android": {
+      "package": "com.glwvia.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0f0f12"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.glwvia.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  }
+}
