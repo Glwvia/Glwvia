@@ -1,18 +1,13 @@
 {
-  "cli": {
-    "version": ">= 16.13.3"
-  },
+  "cli": { "version": ">= 16.13.3" },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": { "buildType": "apk" }
     },
-    "production": {}
+    "production": {
+      "distribution": "internal"
+    }
   },
-  "submit": {
-    "production": {}
-  }
+  "submit": { "production": {} }
 }
