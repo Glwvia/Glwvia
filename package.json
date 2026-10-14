@@ -1,0 +1,12 @@
+{
+  "name": "glwvia",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": { "start": "expo start" },
+  "dependencies": {
+    "expo": "~51.0.0",
+    "expo-status-bar": "~1.12.0",
+    "react": "18.2.0",
+    "react-native": "0.74.0"
+  }
+}
