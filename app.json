@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Glwvia",
+    "slug": "glwvia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0f12"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.glwvia.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f0f12"
+      },
+      "package": "com.glwvia.app",
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "Where Connections Shine - Discover Abuja dating with referral earnings",
+    "extra": {
+      "paystackLink": "https://paystack.shop/pay/dr-f3oyt23"
+    }
+  }
+}
