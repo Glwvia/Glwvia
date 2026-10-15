@@ -3,6 +3,7 @@ module.exports = {
     name: "glwvia",
     slug: "glwvia",
     version: "1.0.0",
+    owner: "glevia",
     android: {
       package: "com.glwvia.app"
     },
