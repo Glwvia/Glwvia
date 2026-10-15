@@ -2,6 +2,12 @@
   "name": "glwvia",
   "version": "1.0.0",
   "main": "App.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
   "dependencies": {
     "expo": "~51.0.28",
     "react": "18.2.0",
@@ -9,3 +15,5 @@
     "expo-status-bar": "~1.12.1",
     "expo-splash-screen": "~0.27.5",
     "react-native-google-mobile-ads": "^14.12.1"
+  }
+}
